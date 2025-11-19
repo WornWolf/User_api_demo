@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New User</title>
+    <link rel="stylesheet" href="addUser.css" />
+  </head>
+  <body>
+    <h1>Add New User</h1>
+
+    <form
+      id="add-user-form"
+      enctype="multipart/form-data"
+      action="/api/users"
+      method="POST"
+    >
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Username"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        required
+      />
+      <input type="file" name="avatar" id="avatar" accept="image/*" required />
+      <p>File type only: JPEG JPG PNG and limit size: 2MB</p>
+
+      <!-- Preview image -->
+      <div id="preview-container">
+        <img id="avatar-preview" src="" alt="Avatar Preview" />
+      </div>
+
+      <div id="progress-container" style="display: none; margin-top: 10px">
+        <progress
+          id="upload-progress"
+          value="0"
+          max="100"
+          style="width: 100%"
+        ></progress>
+        <span id="upload-status">Uploading...</span>
+      </div>
+      <button type="submit">Add User</button>
+    </form>
+    
+    <p><a href="index.html">← Back to User List</a></p>
+
+    <script src="addUser.js"></script>
+  </body>
+</html>

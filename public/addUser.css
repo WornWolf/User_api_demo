@@ -1,0 +1,88 @@
+/* รีเซ็ตพื้นฐาน */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  padding: 40px 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* ฟอร์มเพิ่มผู้ใช้ */
+form#add-user-form {
+  background: #fff;
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form#add-user-form input[type="text"],
+form#add-user-form input[type="email"],
+form#add-user-form input[type="file"],
+form#add-user-form button {
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form#add-user-form input[type="file"] {
+  padding: 6px;
+}
+
+form#add-user-form button {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+form#add-user-form button:hover {
+  background-color: #2980b9;
+}
+
+/* ลิงก์กลับ */
+p a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+#preview-container {
+  display: flex;
+  justify-content: center; /* จัดแนวนอนกลาง */
+  align-items: center;     /* จัดแนวตั้งกลาง */
+  margin: 10px 0;          /* เว้นระยะจาก input */
+}
+
+#avatar-preview {
+  display: none;           /* ซ่อนก่อนเลือกไฟล์ */
+  width: 150px;            /* ขนาดรูป */
+  height: 150px;
+  object-fit: cover;       /* crop ให้เต็มกรอบ */
+  border: 2px solid #ccc;
+  border-radius: 10px;     /* มุมโค้ง */
+}

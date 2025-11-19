@@ -1,0 +1,181 @@
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header (Title + Add Button) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  padding: 0 10px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.add-user-link {
+  font-size: 1rem;
+  background-color: #2ecc71;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-user-link:hover {
+  background-color: #27ae60;
+}
+
+/* User Container */
+#user-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Individual User Card */
+#user-container div {
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#user-container div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 18px rgba(0,0,0,0.08);
+}
+
+/* Avatar Image */
+#user-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #eee;
+}
+
+/* Username */
+#user-container h2 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+/* Email */
+#user-container p {
+  font-size: 0.95em;
+  color: #555;
+  word-break: break-word;
+}
+
+.delete-btn {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+
+/* Edit & Save/Cancel Buttons */
+.edit-btn {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.cancel-btn {
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cancel-btn:hover {
+  background-color: #7f8c8d;
+}
+
+/* Optional: Align buttons horizontally */
+.user-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.save-btn {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #2ecc71; /* สีเขียว */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.save-btn:hover {
+  background-color: #27ae60; /* เขียวเข้มเวลา hover */
+}
+
+/* Edit Input Fields */
+.edit-input {
+  display: block;          /* ให้เป็นบล็อกเต็มบรรทัด */
+  width: 80%;              /* ปรับความกว้างตามต้องการ */
+  padding: 5px 8px;
+  margin: 5px auto;        /* กึ่งกลางแนวนอน */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;      /* ใส่ข้อความตรงกลางใน input */
+}
