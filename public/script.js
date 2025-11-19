@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const userContainer = document.getElementById('user-container');
-  const BASE_URL =
-  location.hostname === "localhost"
-    ? "http://localhost:5000"
-    : "https://user-api-demo.vercel.app";
+  const BASE_URL = window.BASE_URL;
     
   async function fetchAndDisplayUsers() {
     try {

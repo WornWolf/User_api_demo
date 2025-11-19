@@ -8,12 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const progressContainer = document.getElementById("progress-container");
   const uploadProgress = document.getElementById("upload-progress");
   const uploadStatus = document.getElementById("upload-status");
-  const BASE_URL =
-  location.hostname === "localhost"
-    ? "http://localhost:5000"
-    : "https://user-api-demo.vercel.app";
-
-
+  const BASE_URL = window.BASE_URL;
+  
   // --- Avatar preview ---
   avatarInput.addEventListener("change", () => {
     const file = avatarInput.files[0];
