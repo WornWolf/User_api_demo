@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const BASE_URL =
   location.hostname === "localhost"
     ? "http://localhost:5000"
-    : "https://my-website.com";
+    : "https://user-api-demo.vercel.app";
 
 
   // --- Avatar preview ---
